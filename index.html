@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quantoria — Explore Assets</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas id="bg-stars" aria-hidden="true"></canvas>
+
+    <main class="board" role="main">
+      <section class="card hero glass">
+        <header class="brand">
+          <div class="logo-ring">
+            <div class="logo-core">Q</div>
+          </div>
+          <div>
+            <h1>Quantoria</h1>
+            <p>Theory Meets Demonstration</p>
+          </div>
+        </header>
+
+        <h2>Explore Page Assets</h2>
+        <p class="intro">
+          High resolution assets and icons used in the Explore page. These assets represent key mathematical
+          structures, quantum concepts, and UI elements.
+        </p>
+
+        <div class="palette">
+          <h3>Color Palette</h3>
+          <div class="swatches">
+            <div class="sw" style="--c:#7c2bff"><span>#7C2BFF</span></div>
+            <div class="sw" style="--c:#BB83FF"><span>#BB83FF</span></div>
+            <div class="sw" style="--c:#6F5CF6"><span>#6F5CF6</span></div>
+            <div class="sw" style="--c:#3B82F6"><span>#3B82F6</span></div>
+            <div class="sw" style="--c:#22D3EE"><span>#22D3EE</span></div>
+            <div class="sw" style="--c:#34D399"><span>#34D399</span></div>
+            <div class="sw" style="--c:#F472B6"><span>#F472B6</span></div>
+            <div class="sw" style="--c:#F59E0B"><span>#F59E0B</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="card viz glass sphere">
+        <h3>Bloch Sphere</h3>
+        <div class="orb-wrap">
+          <div class="orb">
+            <span class="lat l1"></span><span class="lat l2"></span><span class="lat l3"></span>
+            <span class="lon n1"></span><span class="lon n2"></span><span class="lon n3"></span>
+            <span class="axis axis-x"></span><span class="axis axis-y"></span><span class="axis axis-z"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="card viz glass simplex">
+        <h3>Simplex (2-simplex)</h3>
+        <svg viewBox="0 0 220 220" class="simplex-svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="simpFill" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.65" />
+              <stop offset="100%" stop-color="#f472b6" stop-opacity="0.25" />
+            </linearGradient>
+          </defs>
+          <polygon points="110,24 194,178 26,178" />
+          <circle cx="110" cy="24" r="4" /><circle cx="194" cy="178" r="4" /><circle cx="26" cy="178" r="4" />
+          <line x1="110" y1="24" x2="194" y2="178" />
+          <line x1="194" y1="178" x2="26" y2="178" />
+          <line x1="26" y1="178" x2="110" y2="24" />
+        </svg>
+      </section>
+
+      <section class="card viz glass torus">
+        <h3>Torus (Topological Shape)</h3>
+        <div class="donut"></div>
+      </section>
+
+      <section class="card strip glass">
+        <h3>Category Theory Diagrams</h3>
+        <div class="mini-grid">
+          <div class="mini">F : C → D</div>
+          <div class="mini">Natural transformation</div>
+          <div class="mini">Commutative diagram</div>
+          <div class="mini">Pullback diagram</div>
+        </div>
+      </section>
+
+      <section class="card strip glass">
+        <h3>Quantum Circuit Elements</h3>
+        <div class="chips">
+          <span>|0⟩</span><span>|1⟩</span><span>H</span><span>X</span><span>Y</span><span>Z</span><span>CNOT</span><span>CZ</span><span>SWAP</span><span>Rφ</span><span>MEAS</span>
+        </div>
+      </section>
+
+      <section class="card strip glass">
+        <h3>ZX-Calculus Elements</h3>
+        <div class="zx">
+          <div class="node g"></div>
+          <div class="node r"></div>
+          <div class="edge"></div>
+          <div class="wire"></div>
+          <div class="node y"></div>
+        </div>
+      </section>
+
+      <section class="card strip wide glass">
+        <h3>Topological &amp; Geometric Assets</h3>
+        <div class="mini-grid five">
+          <div class="mini">Knot (Trefoil)</div><div class="mini">Manifold</div><div class="mini">Moebius strip</div><div class="mini">S2 Sphere</div><div class="mini">Lattice</div>
+        </div>
+      </section>
+
+      <section class="card strip wide glass charts">
+        <h3>Data &amp; Visualization Elements</h3>
+        <div class="chart-grid">
+          <div class="chart scatter"><span></span></div>
+          <div class="chart area"><span></span></div>
+          <div class="chart line"><span></span></div>
+          <div class="chart bars"><span></span></div>
+          <div class="chart heat"><span></span></div>
+        </div>
+      </section>
+
+      <section class="card strip full glass">
+        <h3>Icon Set (UI &amp; Features)</h3>
+        <div class="icon-strip">
+          <span>⌂</span><span>⌗</span><span>◈</span><span>⎘</span><span>⌕</span><span>⚙</span><span>⇩</span><span>▶</span><span>&lt;/&gt;</span><span>☰</span><span>☆</span><span>♡</span><span>✓</span><span>?</span><span>＋</span><span>←</span><span>✕</span>
+        </div>
+      </section>
+
+      <section class="card strip wide glass">
+        <h3>Mathematical Symbology</h3>
+        <div class="symbol-row">ℂ ℝ ℤ ℋ Tr † ⊗ ⊕ ∀ ∃ ∈ ∉ ⇒ ⇔ ∑ ∫ d⁄dx</div>
+      </section>
+
+      <section class="card strip glass gradient">
+        <h3>Gradient &amp; Glow Assets</h3>
+        <div class="glows"><span style="--g:#7c2bff"></span><span style="--g:#22d3ee"></span><span style="--g:#f472b6"></span><span style="--g:#2dd4bf"></span><span style="--g:#84cc16"></span></div>
+        <div class="bars-wrap"><div class="bar b1"></div><div class="bar b2"></div></div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
